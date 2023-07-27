@@ -1,25 +1,27 @@
-import React from 'react';
-import { useState , useContext} from 'react';
-import {FirebaseContext} from '../../store/Context'
-import Logo from '../../olx-logo.png';
-import './Login.css';
-import {useHistory} from 'react-router-dom'
+import React from "react";
+import { useState, useContext } from "react";
+import { FirebaseContext } from "../../store/Context";
+import Logo from "../../olx-logo.png";
+import "./Login.css";
+import { useHistory } from "react-router-dom";
 
- 
 function Login() {
-  const [email,setEmail] = useState('')
-  const [password,setPassword] = useState('')
-  const {firebase} = useContext(FirebaseContext)
-  const history = useHistory()
-  const handleLogin = (e)=>{
-       e.preventDefault()
-       firebase.auth().signInWithEmailAndPassword(email,password).then(()=>{
-        history.push('/')
-       }).catch((error)=>{
-        alert(error.message)
-       })
-
-  }
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { firebase } = useContext(FirebaseContext);
+  const history = useHistory();
+  const handleLogin = (e) => {
+    e.preventDefault();
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        history.push("/");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
   return (
     <div>
       <div className="loginParentDiv">
@@ -52,9 +54,13 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a onClick={()=>{
-          history.push('/signup')
-        }}>Signup</a>
+        <a
+          onClick={() => {
+            history.push("/signup");
+          }}
+        >
+          Signup
+        </a>
       </div>
     </div>
   );
