@@ -94,8 +94,7 @@
   margin-right: 5px;
 }
 
-.language svg {
-}
+.language svg {}
 
 .span {
   text-decoration: none;
@@ -112,7 +111,7 @@
   height: 2px;
 }
 
-.loginPage a{
+.loginPage a {
   text-decoration: none;
 }
 
@@ -136,6 +135,7 @@
 .sellMenu .right {
   fill: #3a77ff;
 }
+
 .sellMenu .sellMenuContent {
   display: flex;
   position: absolute;
@@ -156,6 +156,7 @@
 }
 
 @media only screen and (max-width: 700px) {
+
   .placeSearch,
   .productSearch,
   .sellMenu {
