@@ -11,6 +11,7 @@
   align-items: center;
   width: 100%;
 }
+
 .heading :first-child {
   font-size: 24px;
   color: #002f34;
@@ -60,17 +61,21 @@
   min-height: 100%;
   text-align: center;
 }
+
 .card .content .rate {
   margin-top: 10px;
   font-size: larger;
   font-weight: bold;
 }
+
 .card .content .kilometer {
   font-size: medium;
 }
+
 .card .content .name {
   font-size: small;
 }
+
 .card .date {
   display: flex;
   justify-content: flex-end;
