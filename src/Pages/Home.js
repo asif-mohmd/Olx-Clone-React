@@ -6,6 +6,7 @@ import Footer from '../Components/Footer/Footer';
 
 
 function Home(props) {
+  
   return (
     <div className="homeParentDiv">
       <Header />
