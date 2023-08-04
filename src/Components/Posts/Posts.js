@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from "react";
-
 import Heart from "../../assets/Heart";
 import { FirebaseContext } from "../../store/Context";
 import { PostContext } from "../../store/PostContext";
