@@ -28,6 +28,7 @@ function Posts() {
   });
 
   return (
+    
     <div className="postParentDiv">
       <div className="moreView">
         <div className="heading">
