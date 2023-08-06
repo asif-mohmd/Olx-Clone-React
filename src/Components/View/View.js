@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
 import { FirebaseContext } from "../../store/Context";
 import { PostContext } from "../../store/PostContext";
-
 import "./View.css";
+
 function View() {
   const [userDetails, setUserDetails] = useState();
   const { postDetails } = useContext(PostContext);
@@ -44,4 +44,6 @@ function View() {
     </div>
   );
 }
+
+
 export default View;
