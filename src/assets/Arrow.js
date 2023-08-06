@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export default function Arrow() {
     return ( <svg
         width="24px"
