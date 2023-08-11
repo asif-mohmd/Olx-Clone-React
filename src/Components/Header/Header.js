@@ -9,7 +9,6 @@ import SellButton from "../../assets/SellButton";
 import SellButtonPlus from "../../assets/SellButtonPlus";
 import { AuthContext, FirebaseContext } from "../../store/Context";
 
-
 function Header() {
   const history = useHistory();
   const { user } = useContext(AuthContext);
