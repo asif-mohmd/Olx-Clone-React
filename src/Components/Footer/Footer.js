@@ -6,6 +6,7 @@ function Footer() {
   return (
     <div className="footerParentDiv">
       <div className="content">
+        
         <div>
           <div className="heading">
             <p>POPULAR LOCATIONS</p>
